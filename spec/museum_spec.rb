@@ -53,6 +53,13 @@ RSpec.describe Museum do
       dmns.add_exhibit(dead_sea_scrolls)
       dmns.add_exhibit(imax)
       expect(dmns.patrons).to eq([])
+      patron_1.add_interest(gems_and_minerals)
+      patron_1.add_interest(dead_sea_scrolls)
+      patron_2.add_interest(dead_sea_scrolls)
+      dmns.admit(patron_1)
+      dmns.admit(patron_2)
+      dmns.admit(patron_3)
+      expect(dmns.patrons).to eq([patron_1, patron_2, patron_3])
     end
   end
 
