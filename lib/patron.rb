@@ -7,4 +7,6 @@ class Patron
     @spending_money = spending_money
     @interests = []
   end
+
+  
 end
