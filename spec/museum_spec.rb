@@ -10,7 +10,7 @@ RSpec.describe Museum do
   let(:gems_and_minerals) do 
     Exhibit.new({name: "Gems and Minerals", cost: 0})
   end
-  let(:dead_seal_scrolls) do 
+  let(:dead_sea_scrolls) do 
     Exhibit.new({name: "Dead Sea Scrolls", cost: 10})
   end
   let(:imax) do 
